@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parallel Testing" parallel="classes" thread-count="2">
+	<test thread-count="5" name="Test1">
+	<parameter name="browser" value="Chrome"></parameter>
+		<classes>
+			<class name="testScript.LoginTest" >
+			</class>
+		</classes>
+	</test> <!--
+	Test -->
+	<test thread-count="5" name="Test2">
+	<parameter name="browser" value="Chrome"></parameter>
+		<classes>
+			<class name="testScript.HomeTest" >
+			
+			</class>
+		</classes>
+	</test>
+	<test thread-count="5" name="Test3">
+	<parameter name="browser" value="Chrome"></parameter>
+		<classes>
+			<class name="testScript.CategoryTest" >
+			
+			</class>
+		</classes>
+	</test>
+	<test thread-count="5" name="Test4">
+	<parameter name="browser" value="Chrome"></parameter>
+		<classes>
+			<class name="testScript.SubCategoryTest" >
+			
+			</class>
+		</classes>
+	</test>
+	<test thread-count="5" name="Test5">
+	<parameter name="browser" value="Chrome"></parameter>
+		<classes>
+			<class name="testScript.AdminUsersTest" >
+			
+			</class>
+		</classes>
+	</test>
+	<test thread-count="5" name="Test6">
+	<parameter name="browser" value="Chrome"></parameter>
+		<classes>
+			<class name="testScript.ManageNewsTest" >
+			
+			</class>
+		</classes>
+	</test>
+</suite> <!--
+Suite -->

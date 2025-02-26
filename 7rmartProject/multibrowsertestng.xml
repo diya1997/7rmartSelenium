@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Multi Browser Testing" thread-count="2">
+	<parameter name="browser" value="Chrome"></parameter>
+	<test thread-count="5" name="Chrome Test">
+	<parameter name="browser" value="Chrome"></parameter>
+		<classes>
+			<class name="testScript.LoginTest" >
+			<methods>
+				<exclude name="userLoginWithValidUsernameAndPassword"></exclude>
+				<include name="userLoginWithInvalidUsernameAndInvalidPassword"></include>
+			</methods>
+			</class>
+		</classes>
+	</test> <!--
+	Test -->
+	<test thread-count="5" name="Edge Test">
+	<parameter name="browser" value="Edge"></parameter>
+	
+		<classes>
+			<class name="testScript.LoginTest" >
+			<methods>
+				<exclude name="userLoginWithValidUsernameAndPassword"></exclude>
+				<include name="userLoginWithInvalidUsernameAndInvalidPassword"></include>
+			</methods>
+			</class>
+		</classes>
+	</test>
+</suite> <!--
+Suite -->
