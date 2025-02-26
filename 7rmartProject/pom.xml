@@ -74,7 +74,7 @@
 				<configuration>
 					<testFailureIgnore>true</testFailureIgnore>
 					<suiteXmlFiles>
-						<suiteXmlFile>paralleltestng.xml</suiteXmlFile>
+						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
